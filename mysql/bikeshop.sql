@@ -34,7 +34,7 @@ CREATE TABLE `bikes` (
   `brand` varchar(64) DEFAULT NULL,
   `type` varchar(32) DEFAULT NULL,
   `price` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `bikes`
@@ -58,7 +58,7 @@ CREATE TABLE `clients` (
   `lastname` varchar(64) DEFAULT NULL,
   `email` varchar(64) DEFAULT NULL,
   `phone_number` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `clients`
@@ -78,7 +78,7 @@ CREATE TABLE `offers` (
   `id` int NOT NULL,
   `part_id` int DEFAULT NULL,
   `discount` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `offers`
@@ -100,7 +100,7 @@ CREATE TABLE `parts` (
   `id` int NOT NULL,
   `name` varchar(128) DEFAULT NULL,
   `price` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `parts`
@@ -124,7 +124,7 @@ CREATE TABLE `repairs` (
   `part_id` int DEFAULT NULL,
   `cost` float DEFAULT NULL,
   `time_spent` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Índices para tablas volcadas

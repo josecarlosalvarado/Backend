@@ -34,7 +34,7 @@ CREATE TABLE `customers` (
   `name` varchar(64) DEFAULT NULL,
   `address` varchar(128) DEFAULT NULL,
   `phone_number` varchar(32) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `customers`
@@ -61,7 +61,7 @@ CREATE TABLE `deliveries` (
   `sale_id` int DEFAULT NULL,
   `delivery_date` date DEFAULT NULL,
   `other_details` varchar(256) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `deliveries`
@@ -86,7 +86,7 @@ CREATE TABLE `ref_model_types` (
   `model_type_code` varchar(32) NOT NULL,
   `parent_model_type_code` varchar(32) DEFAULT NULL,
   `model_type_name` varchar(256) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `ref_model_types`
@@ -113,7 +113,7 @@ CREATE TABLE `sales` (
   `sale_date` date DEFAULT NULL,
   `other_details` varchar(256) DEFAULT NULL,
   `price` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `sales`
@@ -137,10 +137,10 @@ INSERT INTO `sales` (`sale_id`, `customer_id`, `vehicle_id`, `sale_date`, `other
 CREATE TABLE `vehicles` (
   `vehicle_id` int NOT NULL,
   `model_type_code` varchar(32) DEFAULT NULL,
-  `vehicle_name` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `vehicle_name` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `launch_date` date DEFAULT NULL,
   `other_details` varchar(512) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `vehicles`
